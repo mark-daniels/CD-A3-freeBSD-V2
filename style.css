@@ -1,0 +1,157 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* WRAPPER ------------------------ */
+#wrapper {
+	width: 970px;
+	margin: 0 auto;
+	font-family: verdana, sans-serif;
+	font-size: 0px;
+}
+
+
+/* HEADER ------------------------- */
+#header {
+	background-color: #860000;
+	height: 100%;
+}
+	#header img {
+		padding-left: 50px;
+	}
+	#header h1 {
+		/* family=Montserrat+Alternates valid for CSS 3 */
+		font-family: 'Montserrat Alternates', sans-serif;
+		font-size: 20px;
+		font-weight: normal;
+		color: #ffffff;
+		margin: 20px 0px 0px 5px;
+	}
+	#top_right {
+		font-size: 10.5px;
+		color: #ffffff;
+		margin: 10px 20px 0px 174px;
+		text-align: right;
+	}
+		#top_right ul li:nth-child(2):after {
+			content: " /";
+		}
+		#top_right ul li:nth-child(1):after {
+			content: none;
+		}
+		#top_right ul li a {
+			color: #ffcc99;
+		}
+		#top_right input[type="search"] {
+			width: 135px;
+			height: 18px;
+			font-size: 10px;
+			margin: 10px 0px 10px 70px;
+			padding: 4px;
+			border: 1px solid #cccccc;
+		}
+		#top_right input[type="submit"] {
+			font-size: 10px;
+			color: #ffffff;
+			background-color: #860000;
+			border: 1px solid #ffffff;
+			padding: 2px 4px;
+		}
+
+		/* top_right and navigation ---- */
+		#top_right ul li, #navigation ul li{
+			display: inline;
+			list-style-type: none;
+		}
+		#top_right  ul li:after, #navigation  ul li:after{
+			content: " |";
+		}
+		#top_right ul li:last-child:after,
+		#navigation ul li:last-child:after {
+			content: none;
+		}
+
+/* NAVIGATION --------------------- */
+#navigation {
+	background-color: #ececec;
+	height: 100%;
+	font-size: 12px;
+	border-top: 1px solid #b4b4b4;
+	border-bottom: 1px solid #b4b4b4;
+}
+	#navigation ul {
+		padding: 5px 0px 5px 20px;
+	}
+	#navigation ul li a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #666666;
+		padding: 10px;
+	}
+	#navigation ul li:after {
+		color: #b4b4b4;
+	}
+
+/* SIDE BAR --------------------- */
+#side_bar {
+	background-color: #eeeeee;
+	margin: 25px 0px 0px 25px;
+	width: 158px;
+	height: 100%;
+	font-size: 12px;
+	padding: 10px 5px 10px 10px;
+	border: 1px solid #cccccc;
+}
+	#side_bar li {
+		list-style-type: none;
+		padding: 5px;
+	}
+	#side_bar li:before {
+		content: "\00BB";
+		padding-right: 5px;
+		color: #860000;
+	}
+	#side_bar li a {
+		color: #860000;
+	}
+
+/* CONTENT ------------------------ */
+#content {
+	background-color: #ffffff;
+	margin: 25px 0px 0px 25px;
+	padding: 0px 30px 10px 0px;
+	width: 715px;
+	height: 100%;
+	font-size: 12px;
+}
+	#content p {
+		padding: 10px 0px;
+	}
+	#content ul, ol {
+		padding: 10px 30px;
+	}
+	#content hr {
+		margin: 10px 0px;
+	}
+
+/* ELEMENTS ------------------------ */
+h2 {
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+h3 {
+	font-size: 12px;
+}
+h2, h3, #content a {
+	color: #860000;
+}
+/* CLASSES ------------------------ */
+.inlineBlock {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.boldIt {
+	font-weight: bold;
+}
